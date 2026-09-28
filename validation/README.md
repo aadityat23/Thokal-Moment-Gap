@@ -2,8 +2,14 @@
 
 ## Status of the code
 
-The validation script is not yet included in this repository. This document records the scope and results of the validation run as reported by the author, and states its limits. It will be updated with run instructions once the script is added, and the exact property tested in each check should then be confirmed against the script.
+The executable validation suite is included in this directory and runs automatically through GitHub Actions. The random seed is fixed in the script as `20260928`, and the connected-construction check reports feasible and infeasible cases.
 
+## Local reproduction
+
+```bash
+python -m pip install -r validation/requirements.txt
+python validation/validate_thokal_moment_gap.py
+```
 ## What the validation does
 
 The suite performs three checks:
