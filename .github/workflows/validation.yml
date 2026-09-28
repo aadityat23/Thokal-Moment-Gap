@@ -1,0 +1,31 @@
+name: Computational validation
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "validation/**"
+      - ".github/workflows/validation.yml"
+  pull_request:
+    paths:
+      - "validation/**"
+      - ".github/workflows/validation.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: python -m pip install -r validation/requirements.txt
+      - name: Run validation suite
+        run: python validation/validate_thokal_moment_gap.py
