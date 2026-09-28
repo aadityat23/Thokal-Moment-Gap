@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thokal Moment Gap — Extremal Graph Theory</title>
+<meta name="description" content="An extremal moment-gap analysis between the annihilation number and the first Zagreb index.">
+<meta name="theme-color" content="#f3efe8">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav">
+  <a class="brand" href="#top"><span class="brand-mark">T</span><span>THOKAL MOMENT GAP</span></a>
+  <nav>
+    <a href="#problem">Problem</a><a href="#result">Result</a><a href="#architecture">Proof</a>
+    <a href="#validation">Validation</a><a href="#about">Researcher</a>
+  </nav>
+  <a class="nav-github" href="https://github.com/aadityat23/Thokal-Moment-Gap" target="_blank" rel="noreferrer">GitHub ↗</a>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-orbit"><span></span><span></span><span></span><i>Γ</i></div>
+  <div class="hero-copy">
+    <div class="eyebrow"><span>01</span> EXTREMAL GRAPH THEORY · RESEARCH NOTE · 2026</div>
+    <h1>The<br><em>Extremal</em><br>Moment Gap.</h1>
+    <p class="subtitle">A degree-sequence problem connecting the <strong>annihilation number</strong> with the <strong>first Zagreb index</strong>.</p>
+    <div class="hero-rule"></div>
+    <div class="hero-bottom">
+      <p class="status"><span class="status-dot"></span> Manuscript in preparation · independent audit in progress</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#result">Explore the result <span>↓</span></a>
+        <a class="button quiet" href="https://github.com/aadityat23/Thokal-Moment-Gap/tree/main/paper" target="_blank" rel="noreferrer">Read the paper ↗</a>
+      </div>
+    </div>
+  </div>
+  <aside class="hero-index"><span>RESEARCH NOTE</span><strong>TMG / 2026</strong><small>Graph theory<br>Moment inequalities<br>Extremal structure</small></aside>
+</section>
+
+<section id="problem" class="section problem">
+  <div class="section-head"><div class="section-number">02</div><div><p class="eyebrow">THE QUESTION</p><h2>How large can the gap become?</h2></div></div>
+  <div class="split">
+    <div class="lead">
+      <p>For a finite simple graph <em>G</em>, the annihilation number <em>a(G)</em> is defined by the smallest degrees, while the first Zagreb index <em>M</em><sub>1</sub>(<em>G</em>) captures a quadratic degree moment.</p>
+      <p>A Cauchy–Schwarz inequality produces an upper envelope <em>B(G)</em>. This project studies the integer slack between that moment bound and the annihilation number.</p>
+    </div>
+    <div class="definition-card"><div><span>a(G)</span><small>Annihilation number</small></div><div><span>M<sub>1</sub>(G)</span><small>First Zagreb index</small></div><div><span>Γ(G)</span><small>Moment gap</small></div></div>
+  </div>
+</section>
+
+<section id="result" class="result-section">
+  <div class="result-inner">
+    <div class="section-head light"><div class="section-number">03</div><div><p class="eyebrow">THE TARGET RESULT</p><h2>Three asymptotic scales.</h2></div></div>
+    <div class="theorem-card">
+      <p class="theorem-label">EXTREMAL EXPANSION</p>
+      <div class="theorem">Γ<sub>max</sub>(n) = Γ<sub>conn</sub>(n)<br><span>= n/2 − <b>3/4</b>n<sup>2/3</sup> − <b>5/16</b>n<sup>1/3</sup> + O(1)</span></div>
+      <div class="theorem-meta"><span><b>n/2</b><small>leading scale</small></span><span><b>n<sup>2/3</sup></b><small>first correction</small></span><span><b>n<sup>1/3</sup></b><small>second correction</small></span></div>
+    </div>
+    <div class="research-note"><span class="note-mark">!</span><p><strong>Current status.</strong> The displayed expansion is the manuscript's target theorem. The leading-order result is treated as established; the sharper global upper-bound argument is undergoing independent mathematical audit before the result is presented as final.</p></div>
+  </div>
+</section>
+
+<section id="architecture" class="section architecture">
+  <div class="section-head"><div class="section-number">04</div><div><p class="eyebrow">PROOF ARCHITECTURE</p><h2>From degree moments<br>to one variable.</h2></div></div>
+  <div class="architecture-grid">
+    <article><span>01</span><h3>Universal bound</h3><p>Cauchy–Schwarz converts the first Zagreb moment into an upper envelope for <em>a(G)</em>.</p></article>
+    <article><span>02</span><h3>Head / tail</h3><p>The annihilation threshold is encoded by <em>h, q, x, U</em> and <em>E</em>.</p></article>
+    <article><span>03</span><h3>Scale-free relaxation</h3><p>Degree variance yields the normalized envelope <em>F<sub>n</sub>(h,v,r)</em>.</p></article>
+    <article><span>04</span><h3>Endpoint reduction</h3><p>The relaxed variables reduce to a one-variable envelope <em>Φ<sub>n</sub></em>.</p></article>
+    <article><span>05</span><h3>Asymptotic optimization</h3><p>Strict concavity localizes the continuous maximizer and its expansion.</p></article>
+    <article><span>06</span><h3>Connected sharpness</h3><p>A universal vertex joined to path components realizes the matching asymptotic scale.</p></article>
+  </div>
+</section>
+
+<section class="construction">
+  <div class="construction-copy"><p class="eyebrow">EXTREMAL CONSTRUCTION</p><h2>One universal vertex.<br>Many path components.</h2><p>The connected construction places a universal vertex over disjoint path components. Its degree sequence takes the form <span class="mono">(2<sup>n−1</sup>, D)</span>, giving a concrete family whose gap follows the predicted asymptotic expansion.</p><a class="text-link" href="https://github.com/aadityat23/Thokal-Moment-Gap/tree/main/paper" target="_blank" rel="noreferrer">See the construction in the manuscript ↗</a></div>
+  <div class="diagram" aria-label="Schematic of a universal vertex joined to several path components"><div class="vertex universal">u</div><div class="path p1"><i></i><i></i><i></i><i></i></div><div class="path p2"><i></i><i></i><i></i></div><div class="path p3"><i></i><i></i><i></i><i></i><i></i></div><div class="path p4"><i></i><i></i></div><div class="diagram-caption">schematic · not to scale</div></div>
+</section>
+
+<section id="validation" class="section validation">
+  <div class="section-head"><div class="section-number">05</div><div><p class="eyebrow">REPRODUCIBILITY</p><h2>Computation as a check,<br>not a substitute for proof.</h2></div></div>
+  <div class="metrics"><div><strong>1,245</strong><span>nonempty atlas graphs<br><small>n ≤ 7</small></span></div><div><strong>5,000</strong><span>deterministic random trials<br><small>n = 8…80</small></span></div><div><strong>10–200</strong><span>construction range<br><small>where feasible</small></span></div></div>
+  <div class="terminal"><div class="terminal-top"><span></span><span></span><span></span><em>validation / run</em></div><code><b>$</b> python validation/validate_thokal_moment_gap.py</code><div class="terminal-row"><span>Universal bound</span><b>PASS</b></div><div class="terminal-row"><span>Random graph tests</span><b>PASS</b></div><div class="terminal-row"><span>Connected construction</span><b>PASS</b></div></div>
+  <p class="small-note">The finite checks support reproducibility of the computational claims. They do not establish the asymptotic theorem.</p>
+</section>
+
+<section id="about" class="about">
+  <div class="about-inner">
+    <div class="about-photo"><div class="photo-frame"><img src="suitpfp.png" alt="Aaditya Thokal"></div><span class="photo-caption">A. THOKAL · 2026</span></div>
+    <div class="about-copy">
+      <p class="eyebrow">06 · ABOUT THE RESEARCHER</p>
+      <h2>A student building<br><em>mathematics in public.</em></h2>
+      <p>Aaditya Thokal is an undergraduate researcher working across data engineering, mathematical analysis and applied machine learning. The Thokal Moment Gap project is an independent exploration in extremal graph theory, developed with an emphasis on explicit derivations, reproducible computation and adversarial mathematical checking.</p>
+      <div class="about-facts"><div><span>01</span><b>Independent research</b><small>Extremal graph theory</small></div><div><span>02</span><b>Research practice</b><small>Proof + computation + audit</small></div><div><span>03</span><b>Academic record</b><small>Open research repository</small></div></div>
+      <a class="text-link light-link" href="https://github.com/aadityat23" target="_blank" rel="noreferrer">View researcher profile ↗</a>
+    </div>
+  </div>
+</section>
+
+<section id="record" class="record">
+  <div class="record-inner"><div><p class="eyebrow">07 · OPEN RESEARCH RECORD</p><h2>Read it. Reproduce it.<br>Try to break it.</h2><p>The repository contains the manuscript, supporting proof dossier, validation code and project documentation. Mathematical scrutiny and counterexamples are welcome.</p></div>
+  <div class="record-links"><a href="https://github.com/aadityat23/Thokal-Moment-Gap" target="_blank" rel="noreferrer"><span>01</span> GitHub repository <b>↗</b></a><a href="https://github.com/aadityat23/Thokal-Moment-Gap/tree/main/paper" target="_blank" rel="noreferrer"><span>02</span> Manuscript & dossier <b>↗</b></a><a href="https://github.com/aadityat23/Thokal-Moment-Gap/tree/main/validation" target="_blank" rel="noreferrer"><span>03</span> Validation suite <b>↗</b></a><a href="https://github.com/aadityat23/Thokal-Moment-Gap/issues" target="_blank" rel="noreferrer"><span>04</span> Discuss / report <b>↗</b></a></div></div>
+</section>
+</main>
+<footer><span>THOKAL MOMENT GAP · 2026</span><span>Independent undergraduate research · Aaditya Thokal</span></footer>
+</body>
+</html>
