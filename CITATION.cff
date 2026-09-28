@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this repository or the accompanying manuscript, please cite the manuscript below. The work is unpublished and has not been peer reviewed."
+title: "Thokal-Moment-Gap: supporting repository for a manuscript on the annihilation number and the first Zagreb index"
+type: software
+authors:
+  - family-names: "Thokal"
+    given-names: "Aaditya"
+    # TODO (author): add orcid and email here if you wish; none were supplied.
+repository-code: "https://github.com/aadityat23/Thokal-Moment-Gap"
+abstract: "Supporting repository for a manuscript studying the extremal gap between the annihilation number and a Cauchy-Schwarz-type bound determined by the first Zagreb index. Unpublished; not peer reviewed."
+keywords:
+  - annihilation number
+  - first Zagreb index
+  - extremal graph theory
+  - degree sequences
+# license: TODO (author): add an SPDX identifier once a license is chosen.
+# date-released: TODO (author): add when a tagged release is made.
+preferred-citation:
+  type: unpublished
+  title: "The Extremal Moment Gap Between the Annihilation Number and the First Zagreb Index"
+  authors:
+    - family-names: "Thokal"
+      given-names: "Aaditya"
+  year: 2026
+  notes: "Unpublished manuscript in preparation for submission to the Electronic Journal of Combinatorics. Not peer reviewed. Replace this entry with the journal reference if the work is published."
+  # TODO (author): confirm the final manuscript title (README heading and draft title currently differ).
