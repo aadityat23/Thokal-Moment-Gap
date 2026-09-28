@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aadityat23.github.io/Thokal-Moment-Gap/sitemap.xml
