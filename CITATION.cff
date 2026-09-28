@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this repository or the accompanying manuscript, please cite the Version 1.0 preprint below."
+title: "The Extremal Moment Gap Between the Annihilation Number and the First Zagreb Index"
+type: article
+authors:
+  - family-names: "Thokal"
+    given-names: "Aaditya Anand"
+repository-code: "https://github.com/aadityat23/Thokal-Moment-Gap"
+abstract: "Version 1.0 research preprint studying the extremal gap between the annihilation number and a Cauchy-Schwarz-type bound determined by the first Zagreb index."
+keywords:
+  - annihilation number
+  - first Zagreb index
+  - Thokal moment-gap formula
+  - extremal graph theory
+  - degree sequences
+  - graph invariants
+  - combinatorics
+license: "CC-BY-4.0"
+date-released: 2026-09-28
+doi: "10.5281/zenodo.23007553"
+url: "https://doi.org/10.5281/zenodo.23007553"
+preferred-citation:
+  type: article
+  title: "The Extremal Moment Gap Between the Annihilation Number and the First Zagreb Index"
+  authors:
+    - family-names: "Thokal"
+      given-names: "Aaditya Anand"
+  year: 2026
+  doi: "10.5281/zenodo.23007553"
+  url: "https://doi.org/10.5281/zenodo.23007553"
+  notes: "Version 1.0 research preprint. The manuscript has not undergone external peer review."
