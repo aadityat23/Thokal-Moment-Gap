@@ -4,6 +4,12 @@
 [![Computational validation](https://github.com/aadityat23/Thokal-Moment-Gap/actions/workflows/validation.yml/badge.svg)](https://github.com/aadityat23/Thokal-Moment-Gap/actions/workflows/validation.yml)
 
 [Research site](https://aadityat23.github.io/Thokal-Moment-Gap/)
+# The Extremal Moment Gap Between the Annihilation Number and the First Zagreb Index
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23007553.svg)](https://doi.org/10.5281/zenodo.23007553)
+
+A research preprint on the extremal gap between the annihilation number
+and the first Zagreb index.
 
 Supporting repository for a graph-theoretic research manuscript on the gap between the annihilation number $a(G)$ and a Cauchy–Schwarz-type upper bound $B(G)$ determined by the first Zagreb index. The manuscript is a research preprint in preparation for journal submission and has not been peer reviewed.
 
