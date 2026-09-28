@@ -1,6 +1,10 @@
 # Annihilation Number and the First Zagreb Index:
 # An Extremal Moment-Gap Analysis
 
+[![Computational validation](https://github.com/aadityat23/Thokal-Moment-Gap/actions/workflows/validation.yml/badge.svg)](https://github.com/aadityat23/Thokal-Moment-Gap/actions/workflows/validation.yml)
+
+[Research site](https://aadityat23.github.io/Thokal-Moment-Gap/)
+
 Supporting repository for a graph-theoretic research manuscript on the gap between the annihilation number $a(G)$ and a Cauchy–Schwarz-type upper bound $B(G)$ determined by the first Zagreb index. The manuscript is a research preprint in preparation for journal submission and has not been peer reviewed.
 
 ## Overview
@@ -69,7 +73,16 @@ Thokal-Moment-Gap/
 │   └── supporting/
 │       └── proof_dossier.docx    Internal working proof and audit dossier
 └── validation/
-    └── README.md                 Scope and limits of the computational validation
+|   └── README.md                 Scope and limits of the computational validation
+docs/
+├── index.html
+├── style.css
+└── suitpfp.png
+
+validation/
+├── validate_thokal_moment_gap.py
+├── requirements.txt
+└── README.md
 ```
 
 The validation script itself is not yet in the repository; see [Reproducibility](#reproducibility).
@@ -80,22 +93,14 @@ The current manuscript is being prepared for submission to the *Electronic Journ
 
 ## Reproducibility
 
-The validation script is not currently included in this repository, so no run commands are given here. Commands will be added together with the script, and only after they have been confirmed to work with the files present.
+Run locally with:
 
-## Status
+```bash
+python -m pip install -r validation/requirements.txt
+python validation/validate_thokal_moment_gap.py
 
-Research preprint / manuscript in preparation for journal submission.
-
-- The work is an undergraduate independent research project.
-- It has not been peer reviewed and has not been externally validated.
-- The manuscript's upper-bound argument (proof architecture steps 5 to 8) is the part most in need of independent scrutiny. The points identified for external review are:
-  1. no inequality reversal in the passage $C\le F_n \Rightarrow B$;
-  2. validity of $r\to1$ over the feasible range;
-  3. the endpoint argument in $v$;
-  4. the range of the endpoint comparison;
-  5. integer, parity, and $O(1)$ handling;
-  6. feasibility of the construction and the lower bound.
-- No license has been selected yet.
+```
+ **Status:** This is the target theorem of the current unrefereed manuscript. The leading-order statement is treated as established within the project; the sharper global upper-bound argument remains under independent mathematical audit.
 
 ## Author
 
